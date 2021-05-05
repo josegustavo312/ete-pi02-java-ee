@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="RelatorioCliente"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<queryString><![CDATA[SELECT
+     administrador.`nome` AS administrador_nome,
+     administrador.`dataNascimento` AS administrador_dataNascimento,
+     administrador.`sexo` AS administrador_sexo,
+     administrador.`email` AS administrador_email,
+     administrador.`mae` AS administrador_mae,
+     administrador.`telefone` AS administrador_telefone,
+     administrador.`idadministrador` AS administrador_idadministrador,
+     endereco.`cidade` AS endereco_cidade,
+     endereco.`bairro` AS endereco_bairro,
+     endereco.`logradouro` AS endereco_logradouro,
+     endereco.`numero` AS endereco_numero,
+     endereco.`uf` AS endereco_uf
+FROM
+     `endereco` endereco INNER JOIN `administrador` administrador ON endereco.`idendereco` = administrador.`endereco_idendereco`]]></queryString>
+
+	<field name="administrador_nome" class="java.lang.String"/>
+	<field name="administrador_dataNascimento" class="java.sql.Date"/>
+	<field name="administrador_sexo" class="java.lang.String"/>
+	<field name="administrador_email" class="java.lang.String"/>
+	<field name="administrador_mae" class="java.lang.String"/>
+	<field name="administrador_telefone" class="java.lang.String"/>
+	<field name="administrador_idadministrador" class="java.lang.Integer"/>
+	<field name="endereco_cidade" class="java.lang.String"/>
+	<field name="endereco_bairro" class="java.lang.String"/>
+	<field name="endereco_logradouro" class="java.lang.String"/>
+	<field name="endereco_numero" class="java.lang.String"/>
+	<field name="endereco_uf" class="java.lang.String"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="50"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="51"
+						y="16"
+						width="211"
+						height="23"
+						key="staticText-1"/>
+					<box></box>
+					<textElement>
+						<font size="18" isBold="true" isItalic="false" isUnderline="true"/>
+					</textElement>
+				<text><![CDATA[Relatório Administrador]]></text>
+				</staticText>
+				<image  evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="45"
+						height="40"
+						key="image-1"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.lang.String"><![CDATA["D:\\GUSTAVO\\Documentos\\Arquivos\\ETE\\ETE LIMOEIRO\\II Módulo\\II Projeto Integrador\\Programação OO\\Projeto\\SOFTF5-WEB\\web\\img\\icones\\icon\\adminRelatorio.jpg"]]></imageExpression>
+				</image>
+				<image  evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="355"
+						y="8"
+						width="181"
+						height="42"
+						key="image-2"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.lang.String"><![CDATA["D:\\GUSTAVO\\Documentos\\Arquivos\\ETE\\ETE LIMOEIRO\\II Módulo\\II Projeto Integrador\\Programação OO\\Projeto\\SOFTF5-WEB\\web\\img\\icones\\icon\\F5_Layout.jpg"]]></imageExpression>
+				</image>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="30"  isSplitAllowed="true" >
+				<rectangle>
+					<reportElement
+						x="167"
+						y="6"
+						width="113"
+						height="24"
+						backcolor="#333333"
+						key="rectangle-6"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="185"
+						y="11"
+						width="70"
+						height="18"
+						forecolor="#FFFFFF"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+				<text><![CDATA[EMAIL]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="280"
+						y="6"
+						width="100"
+						height="24"
+						backcolor="#666666"
+						key="rectangle-7"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="292"
+						y="11"
+						width="70"
+						height="18"
+						forecolor="#FFFFFF"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+				<text><![CDATA[CIDADE]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="56"
+						y="6"
+						width="111"
+						height="24"
+						backcolor="#666666"
+						key="rectangle-8"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="67"
+						y="11"
+						width="70"
+						height="18"
+						forecolor="#FFFFFF"
+						key="staticText-7"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+				<text><![CDATA[NOME]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="0"
+						y="6"
+						width="56"
+						height="24"
+						backcolor="#333333"
+						key="rectangle-9"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="9"
+						y="11"
+						width="37"
+						height="18"
+						forecolor="#FFFFFF"
+						key="staticText-8"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+				<text><![CDATA[ID]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="380"
+						y="6"
+						width="107"
+						height="24"
+						backcolor="#333333"
+						key="rectangle-10"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="395"
+						y="11"
+						width="77"
+						height="18"
+						forecolor="#FFFFFF"
+						key="staticText-9"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+				<text><![CDATA[LOGRADOURO]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="487"
+						y="6"
+						width="48"
+						height="24"
+						backcolor="#666666"
+						key="rectangle-11"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="496"
+						y="11"
+						width="34"
+						height="18"
+						forecolor="#FFFFFF"
+						key="staticText-10"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font isBold="true"/>
+					</textElement>
+				<text><![CDATA[Nº]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="52"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="280"
+						y="12"
+						width="100"
+						height="18"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{endereco_cidade}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="380"
+						y="12"
+						width="107"
+						height="18"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{endereco_logradouro}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="487"
+						y="12"
+						width="48"
+						height="18"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{endereco_numero}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="42"
+						width="535"
+						height="0"
+						key="line-1"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="167"
+						y="12"
+						width="113"
+						height="18"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{administrador_email}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="56"
+						y="12"
+						width="111"
+						height="18"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{administrador_nome}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="12"
+						width="56"
+						height="18"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{administrador_idadministrador}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="30"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

@@ -1,0 +1,117 @@
+html{
+    background-image:url("../img/plano_html.jpg");
+
+}
+
+#container{    
+    width: 900px;    
+    height: 500px;    
+    margin: 0 auto;
+}
+
+#topo{
+    height: 108px;
+    padding-top:12px;
+    margin-bottom: 7px;
+    text-align:center;
+    font-size:40px;
+    color:transparent;
+    background-image: url("../img/topo.png");
+    
+}
+
+#menu{
+    
+    height: 50px;
+    width: 895px;
+    background-color: #000066;
+    padding-left: 5px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+    background-image: url("../img/menu.png");
+}
+
+#conteudo{
+    width: 880px;
+    min-height: 500px;
+    color: #000066;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 7px;
+    background-image: url("../img/conteudo.png");
+}
+
+#conteudo_nota{
+    width: 880px;
+    min-height: 500px;
+    color: #000066;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 7px;
+    background-image: url("../img/conteudo.png");
+}
+
+#conteudo_login{
+    width: 880px;
+    min-height: 500px;
+    color: #000066;
+    padding: 60px 10px 0 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 7px;
+    background-image: url("../img/conteudo_login.png");
+}
+
+#conteudo_admin{
+    width: 880px;
+    min-height: 500px;
+    color: #000066;
+    padding: 60px 10px 0 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 7px;
+    background-image: url("../img/conteudo_admin.png");
+}
+
+#conteudo_cliente{
+    width: 880px;
+    min-height: 500px;
+    color: #000066;
+    padding: 60px 10px 0 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 7px;
+    background-image: url("../img/conteudo_cliente.png");
+}
+
+#conteudo_empresa{
+    width: 880px;
+    min-height: 500px;
+    color: #000066;
+    padding: 0 10px 0 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 7px;
+    background-image: url("../img/conteudo.png");
+}
+
+#rodape{
+    height:30px;
+    padding-top: 5px;
+    background-color:#006;
+    text-align: right;
+    font-size:15px;
+    color:#FFF;
+}
+
+a{
+  color: #006;
+  text-decoration: none;
+}
+
+a:hover{
+    color: #ff3333;
+    text-decoration: underline;
+}

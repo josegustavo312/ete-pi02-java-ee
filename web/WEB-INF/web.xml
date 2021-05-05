@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>RelatorioCliente</servlet-name>
+        <servlet-class>RelatorioCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RelatorioAdmin</servlet-name>
+        <servlet-class>RelatorioAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RelatorioPC</servlet-name>
+        <servlet-class>RelatorioPC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RelatorioCliente</servlet-name>
+        <url-pattern>/RelatorioCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioAdmin</servlet-name>
+        <url-pattern>/RelatorioAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioPC</servlet-name>
+        <url-pattern>/RelatorioPC</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
