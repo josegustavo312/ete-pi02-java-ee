@@ -1,6 +1,6 @@
-## Escola Técnica - Projeto Integrador II - Java EE
+## Escola TÃ©cnica - Projeto Integrador II - Java EE
 
-###  :computer: Tela
+###  :desktop_computer: Tela
 
 <div align="center">
   <img alt="Tela" title="#Tela" width="100%" height="auto" src="./README/tela.png" />
@@ -9,7 +9,7 @@
 ----------
 
 ### :hammer_and_wrench: Ferramentas
-As seguintes tecnologias foram utilizadas na construção do projeto:
+As seguintes tecnologias foram utilizadas na construÃ§Ã£o do projeto:
 - NetBeans;
 - Java Server Pages (JSP);
 - CSS;
@@ -18,7 +18,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 
 ----------
 
-###  :gear: Funções
+###  :gear: FunÃ§Ãµes
 - [x] PDV (Ponto de Venda);
 - [x] CRUD de Computadores;
 - [x] CRUD de Administradores;
@@ -27,7 +27,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 ----------
 
 ###  :eyeglasses: Autor
-José Gustavo da Silva.
+JosÃ© Gustavo da Silva.
 [
 **Linkedin**
 ](https://www.linkedin.com/in/jose-gustavo312/)
